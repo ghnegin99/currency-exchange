@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(183, 238, 251); */
+    background-image: url('./candle-stick.png');
+    object-fit: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.converter {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: white; */
+    margin: 30px auto;
+}
+
+.coverter-wrapper-title {
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+.converter-wrapper {
+    /* background-color: red; */
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.converter-inputs {
+    /* background-color: yellow; */
+    border-radius: 8px;
+    background: rgba(161, 161, 161, 0.578);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 1px 10px rgba(161, 161, 161, 0.578);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.from-amount,
+.from-currency,
+.to-currency {
+    padding: 10px;
+}
+
+.from-amount label,
+.from-currency label,
+.to-currency label {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+}
+
+.from-amount input {
+    border-radius: 8px;
+    padding: 7px 12px;
+    width: 40%;
+    font-size: 1.1rem;
+}
+
+.from-currency select,
+.to-currency select {
+    border-radius: 6px;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.icon {
+    background-color: rgb(18, 18, 35);
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    transition: all 0.3s ease-in;
+}
+
+.icon button:hover {
+    cursor: pointer;
+}
+
+.icon button {
+    padding-top: 8px;
+    background-color: transparent;
+}
+
+.icon svg {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.convert-btn-div {
+    border-radius: 8px;
+    width: 20%;
+    height: 15%;
+    transition: all 0.2s ease-in;
+}
+
+.convert-btn-div:hover {
+    width: 22%;
+    height: 18%;
+}
+
+.convert-btn-div button {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in;
+}
+
+.convert-btn-div button:hover {
+    cursor: pointer;
+}
+
+
+
+
+.converter-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.result {
+    border-radius: 8px;
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-left: 12px;
+
+}
+
+.result-item {
+    padding: 0.4rem 0.5rem;
+}
